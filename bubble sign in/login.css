@@ -1,0 +1,167 @@
+*, *::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+:root{
+    --pri-color: rgb(122,169,187);
+    --sd-color: rgb(24,65,84);
+    --ac-color: rgb(12,40,55);
+    --ac-color2: rgb(234,81,37);
+    --ac-color3: rgb(125,140,130);
+
+}
+body{
+    background: var(--ac-color);
+    overflow: hidden;
+    
+}
+background{
+    width: 430px;
+    height: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+
+}
+form{
+    height: 450px;
+    width: 350px;
+    position: absolute;
+    background: rgba(255,255,255,0.13);
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left:50%;
+    border-radius: 20px;
+    backdrop-filter: 20px;
+    border: 2px solid rgba(15, 245, 7, 0.2);
+    box-shadow: 0 0 40px rgba(33, 3, 255, 0.6);
+    padding: 50px 35px;
+}
+
+form h1{
+    text-align: center;
+    font-size: 2rem;
+}
+
+form p{
+    margin: 10px;
+    text-align: center;
+}
+
+form input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background: rgba(255,255,255,0.07);
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 30px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: #e5e5e5;
+
+}
+button{
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: white;
+    padding: 15px 0;
+    font-size: 18px;
+    letter-spacing: 0.2;
+    font-weight: 600;
+    border-radius: 15px;
+
+}
+
+button::hover{
+    cursor: pointer;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+    background: var(--pri-color);
+    color: black;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+
+}
+
+button:hover{
+    color: black;
+    background-color: var(--ac-color2);
+}
+.text{
+    margin-top: 30px;
+    position: absolute;
+    left: 42%;
+    top: 490px;
+    letter-spacing: 0.8px;
+    font-weight: 20px;
+    font-style: italic;
+
+}
+p{
+    font-size: 14px;
+}
+span{
+    color:var(--ac-color);
+    font-weight: 700;
+}
+span:hover{
+    text-decoration: white solid underline;
+}
+
+.shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+    animation: shape 2s infinite alternate;
+}
+
+@keyframes shape{
+    0%{
+        transform: scale(1);
+        background: rgb(85, 206, 160);
+
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+.shape:first-child{
+    background: var(--pri-color);
+    left: 85px;
+    top: 50px;
+}
+.shape:last-of-type{
+    background: var(--ac-color2);
+    right: 80px;
+    bottom: 50px;
+    animation: shape1 2s infinite alternate;
+}
+@keyframes shape1{
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+        background: #45a931;
+    }
+}

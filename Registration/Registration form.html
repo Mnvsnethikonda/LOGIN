@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="Registration form.css">
+</head>
+<body>
+    <h1>Registration Form</h1>
+
+    <p>Please fill out form below to register for our site. Fields with bold labels are required.</p>
+
+    <form action="/register" method="post" enctype="mutlipart/form-data" id="registrationForm">
+
+        <div class="required">
+            <label class="field" for="name">Name</label>
+            <input name="name" type="text">
+        </div>
+
+        <div class="required">
+            <label class="field" for="email">Email</label>
+            <input name="email" type="email">
+        </div>
+
+        <div class="required">
+            <label class="field">Gender</label>
+
+            <label><input type="radio" name="gender" value="male" />Male</label>
+            <label><input type="radio" name="gender" value="female" />Female</label>
+        </div>
+
+        <div class="required">
+            <label class="field">Operating System</label>
+            <select name="os">
+                <option value="windows">Windows</option>
+                <option value="Mac os">Mac on</option>
+                <option value="Linux">Linux</option>
+                <option value="Other....">Other ....</option>
+            </select>
+        </div>
+
+        <div>
+            <labe lclass="field">Toys</labe>
+            <label> <input type="checkbox" name="toy" value="digicam" /> Digital Camera</label>
+            <label> <input type="checkbox" name="toy" value="mp3" />Mp3 Player</label>
+            <label><input type="checkbox" name="toy" value=""wlan /> Wireless LAN</label>
+        </div>
+
+        <div>
+            <label class="field">Portrait</label>
+            <input type="file" name="portrait" />
+        </div>
+
+        <div>
+            <label class="field">Mini Biography</label>
+            <textarea name="name="bio" row="16" cols="80"></textarea>
+        </div>
+
+        <div class="submit">
+            <input type="submit" value="Register" />
+        </div>
+
+    </form>
+</body>
+</html>

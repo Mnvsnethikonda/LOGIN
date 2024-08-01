@@ -1,0 +1,51 @@
+form div{
+    margin-bottom: 1em;
+}
+div.submit input {
+    margin-left: 165px;
+}
+
+label.field{
+    display: block;
+    float: left;
+    width: 200px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+input[type="text"],
+select, textarea{
+    width: 300px;
+    padding: 5px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #ada;
+}
+
+div.requried label.field{
+    font-weight: bold;
+    color: red;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    float: left;
+    width: 200px;
+}
+
+div.required label.field{
+    font-weight: bold;
+    color: red;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    float: left;
+    width: 200px;
+}
+
+div.required input,
+div.required select{
+    background-color: #6a6;
+    border: solid 2px #000;
+    font-weight: bold;
+}
